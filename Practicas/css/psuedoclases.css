@@ -1,0 +1,23 @@
+body{
+    background-color: bisque;
+}
+.btn{
+    width: 200px;
+    height: 100px;
+    background-color: pink;
+    color: pink;
+    border-radius: 10px;
+}
+
+.btn:hover{
+    background-color: palevioletred;
+}
+ 
+.btn:hover a{
+    background-color: black;
+}
+
+.enlaces a:nth-child(2){
+    font-size: 40px;
+    text-decoration: none;
+}

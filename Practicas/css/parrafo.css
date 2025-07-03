@@ -1,0 +1,21 @@
+/* Selectores de etiqueta*/
+p{
+    color: blueviolet;
+}
+
+p1{ /*lo que tenia p pero para que no se vea lo puse aqui*/
+    text-transform: uppercase; /*Pasa todo la mayusculas*/
+    line-height: 40px; /*la linea entre cada parrafo*/
+    letter-spacing: 10px; /*Espacio entre cada letra*/
+    word-spacing: 20px; /*espaciado entre palabras*/
+    text-align: justify;
+}
+
+.parrafo-verde{
+    color: rgb(0, 255, 34);
+}
+
+span{
+    font-size: 24px;
+    color: red;
+}

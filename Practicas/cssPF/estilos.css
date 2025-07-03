@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    color: white;
+}
+
+body{
+    margin: 0;
+    background-color: black;
+}
+
+.hero-image{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.69), rgba(0, 0, 0, 0.052)), url(../img/BNH-fav.jpg);
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    margin-left: 0;
+    margin-top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.183);
+}
+
+.modal-content{
+    position: relative;
+    margin: 5%;
+    width: 80%;
+    max-width: 800px;
+    background: transparent;
+}
+
+.close:hover{
+    animation:cambiaColor;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes cambiaColor {
+    from{
+        background-color: rgb(255, 255, 255);
+    }
+    to{
+        background-color: rgba(255, 255, 255, 0.632);
+    }
+}

@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;box-sizing: border-box;
+}
+
+.main{
+    display: flex;
+    height: 600px;
+    width: 100%;
+    background-color: aqua;
+    gap: 20px; /*espaciado entre elementos*/
+    flex-direction: row;
+    /*Para flex tenemos varios como: 
+    - row: el eje principal esta en una fila
+    - solumn: el eje prinicàl esta en una columna
+    - row-reverse: el eje principal esta en una fila, pero inicia en el extremo opuesto*/
+    justify-content: space-evenly; /*de que lit es el espacio de los elementos*/
+    align-items: center;
+
+}
+
+.main .caja{
+    height: 80px;
+    width: 80px;
+    background-color: aliceblue;
+    margin: 20px; /*margen de elementos*/
+}

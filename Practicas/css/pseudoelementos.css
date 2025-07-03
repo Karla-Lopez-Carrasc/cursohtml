@@ -1,0 +1,31 @@
+.parrafo::first-letter{ /*la primera letra del parrafo*/
+    font-size: 30px;
+    color: rgb(255, 0, 144);
+}
+
+.parrafo::first-line{ /*la primer linea del parrafo*/
+    font-weight: bold;
+}
+
+.parrafo::selection{ /*cuando seleccionamos*/
+    color: palevioletred;
+    background-color: pink;
+}
+
+.btn{
+    height: 50px;
+    width: 150px;
+}
+.btn::after{ /*despues del elemento voy a colocar algo con ciertos estilos*/
+    display: block;
+    content: "";
+    background-color: rgb(255, 143, 161);
+    color: rgb(255, 143, 161);
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+}
+
+.btn:hover::after{
+    transform: scale(100);
+}

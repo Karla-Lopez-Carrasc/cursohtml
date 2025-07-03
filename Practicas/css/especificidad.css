@@ -1,0 +1,22 @@
+p{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.rojo{
+    color: tomato;
+}
+
+.principal p{
+    font-size: 20px;
+    color: crimson;
+}
+
+.principal p{
+    color: aqua;
+}
+
+.principal .clase-parrafo{
+    font-size: 10px;
+    color: blue;
+}
