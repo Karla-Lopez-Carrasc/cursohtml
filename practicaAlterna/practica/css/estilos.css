@@ -1,0 +1,254 @@
+/* Selectores de etiqueta 
+p {} 
+ Especifidad 
+    0 0 0 1    
+*/
+/*p {
+    color: #ccc;
+    font-weight: bold;
+    
+    /*line-height: 40px;
+    letter-spacing: 1px;
+    word-spacing: -1px;
+    text-align: justify;*/
+
+
+
+
+/* Selector de clase
+    .clase {}
+    Especifidad
+    0 0 1 0
+*/
+
+
+/*.parrafo-verde{
+    color: rgb(229, 161, 15);
+}
+
+.parrafo-violeta{
+    color: blueviolet;
+}
+
+.contenedor{
+    width: 300px;
+    height: 300px;
+    background-color: #eb8b8b;
+}
+
+.contenedor-imagen{
+    background-image: url(../resources/img/Logo_SpyXFamily.png); /* poner imagen de fondo */
+    /*background-repeat: no-repeat; /* imagen se repite o no */
+    /*background-size: cover; */      /* imagen trata de rellenar lo más de la ventana */
+    
+    /*position: fixed;
+
+    width: 100%;
+    height: 200px;
+}
+/*
+section{
+    width: 100%;
+    height: 1000px;
+    background-color: #eb8b8b;
+}
+/*
+.gradiente{
+    background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1));  
+    width: 400px;
+    height: 400px; 
+}
+/*
+.caja22{
+    width: 400px;
+    height: 400px;
+    padding: 100px 100px;
+    text-align: justify;
+    margin: 10px;
+    border: 10px solid black;
+    background-color: rgb(188, 44, 44);
+}
+
+.caja33{
+    width: 400px;
+    height: 400px;
+    background-color: #eb8b8b;
+    margin: 20px;
+}
+*/
+/* mueve la caja, los demás elementos no respetan su flujo*/
+/*.absoluta{
+    background-color: aquamarine;
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    bottom: 15px;
+    right: 44px;
+}
+*/
+/* Mueve la caja, los demás elementos respetan su flujo*/
+/*.relativa{
+    background-color: green;
+    position: relative;
+    top: 20px;
+    left: 50px;
+}
+
+.padre{
+    position: relative;
+    width: 400px;
+    height: 400px;
+}
+
+.hija{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: blueviolet;
+    left: 100%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}*/
+
+/*.main{
+    display: flex;
+    height: 600px;
+    width: 100%;
+    background-color: blanchedalmond;
+    gap: 40px;
+    flex-direction: row; /* ROW: el eje principal es horizontal
+                                column: el eje principal es vertical */
+    /*justify-content: space-around;
+    align-items: center;
+}
+
+.main .caja{
+    height: 80px;
+    width: 80px;
+    background-color: forestgreen;    
+}
+
+p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.rojo{
+    color: red;
+}
+
+.principal p{
+    font-size: 10px;
+    color: red;
+}
+
+.principal p{
+    color: aqua;
+}*/
+
+/*body{
+    background-color: antiquewhite;
+}
+
+.btn{
+    width: 200px;
+    height: 200px;
+    background-color: none;
+    color: white;
+    border-radius: 50%;
+}
+
+a{
+    font-size: 20px;
+    font-weight: bold;
+}
+.btn:hover{
+    background-color: red;
+}
+
+.btn:hover a{
+    color: green;
+}
+
+/*pseudoclase*/
+/*.enlaces a:nth-child(2){
+    font-size: 30px;
+    text-decoration: none;
+}*/
+
+/*pseudoelemento*/
+/*.parrafo::first-letter{
+    font-size: 30px;
+    color: blue;
+}
+
+.parrafo::first-line{
+    font-weight: bold;
+}
+
+.parrafo::selection{
+    background-color: yellow;
+}
+
+.btn{
+    height: 100px;
+    width: 100px;
+    background-color: transparent;
+    overflow: hidden;
+}
+
+.btn::after{
+    display: block
+    content: "";
+    background-color: brown;
+    width: 1px;
+    height: 1px;
+    border-radius: 100%
+}
+    
+.btn:hover::after{
+    transform: scale(100);
+}*/
+
+/*transiciones*/
+/*.caja2{
+    width: 300px;
+    height: 300px;
+    background-color: aquamarine;
+    border-radius: 15px;
+    
+    transition: all 2s ease 0s;
+}
+
+.caja2:hover{
+    background-color: rosybrown;
+}*/
+
+.caja{
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    background-color: rgb(22, 150, 108);
+    box-sizing: border-box;
+    
+}
+
+.caja:hover{
+    animation: cambiarColor;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes cambiarColor {
+    from{
+        background-color: rgb(22, 150, 108);
+    }
+    to{
+        background-color: brown;
+    }
+}
+

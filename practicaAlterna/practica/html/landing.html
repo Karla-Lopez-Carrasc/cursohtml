@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> <!-- METADATOS -->
+
+    <meta charset="UTF-8"> <!-- caracteres usados -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- información del tamaño de la ventana-->
+    <title>Landing</title> <!--nombre de la página -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- ^ link para el uso de iconos de fontawesome -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/info-series.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    
+</head>
+
+<!-- CUERPO DE LA PÁGINA-->
+<body>
+    <div class="hero-image">
+
+        <!-- HEADER -->
+        <header class="header">
+
+            <!-- LOGO -->
+            <section class="logo-letras">
+                <span><img src="../resources/img/letrasNetflix.png" alt="Logo de Netflix">
+                </span>
+            </section>
+                
+            <!-- BARRA DE NAVEGACIÓN -->
+            <nav class="nav">
+                <ul class="menu">
+                    <li><a href="#"> Home </a></li>
+                    <li><a href="#"> TV Shows </a></li>
+                    <li><a href="#"> Movies </a></li>
+                    <li><a href="#"> Latest </a></li>
+                    <li><a href="#"> My List </a></li>
+                </ul>
+            </nav>
+
+            <!-- BARRA DE BÚSQUEDA -->
+            <section class="bar">
+                <input type="text" placeholder="Buscar">
+                <i class="fa-solid fa-magnifying-glass icon"></i> <!-- icono de lupa -->
+            </section>
+
+        </header>
+        <!-- FIN HEADER -->
+
+        <!-- SECCIÓN PRINCIPAL -->
+        <section class="principal-hero">
+
+            <!-- LOGO N -->
+            <article class="netflix-series">
+                <span class="netflix">
+                    <img src="../resources/img/logoNetflix.png" alt="">
+                </span>
+                <p>SERIES</p>
+            </article>
+
+            <!-- INFO DE LA SERIE -->
+            <article class="serie">
+                <span class="logo-serie"><img src="../resources/img/Logo_SquidGame.png" alt=""></span>
+                <section class="info">
+                    <span class="item"> 2022 </span>
+                    <span class="item"> | </span>
+                    <span class="item category"><button>13+ </button></span>
+                    <span class="item"> | </span>
+                    <span class="item"> 3 Temporadas </span>
+                    <span class="item"> | </span>
+                    <span class="item"> Serie </span>
+                </section>
+                <p class="descripcion-parrafo"> Con la misión de acercarse a un político de alto rango en un país vecino, un espía de élite debe formar una familia para reforzar su imagen de encubierto. </p>
+            </article>
+
+            <!-- BOTONES DE CONTROL DE LA SERIE-->
+            <section class="buttons">
+                <button class="play btn"><span> PLAY </span></button>
+                <button class="list btn"><span> MY LIST </span></button>
+            </section>
+
+            <!-- MODAL DE REPRODUCCIÓN DEL VIDEO -->
+            <div class="modal" id="videoModal">
+                <div class="modal-content">
+                    <video id="spyVideo" width="100%" controls><source src="../resources/img/SquidGame.mp4" type="video/mp4"></video>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- FIN DE LA SECCIÓN PRINCIPAL -->
+
+    <!-- FOOTER DE LA PÁGINA-->
+    <footer class="footer">
+
+        <!-- ICONOS DE REDES SOCIALES -->
+        <section class="social-icons">
+            <a href="https://www.facebook.com/NetflixLatino/?locale=es_LA" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/netflix/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://x.com/netflix?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank" aria-label="Twitter (X)"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.youtube.com/channel/UCWOA1ZGywLbqmigxE4Qlvuw" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </section>
+
+        <!-- LINKS VARIOS PARA EL PIE DE PÁGINA-->
+        <section class="footer-links">
+            <ul>    <!-- LISTA 1 -->
+                <li><a href="#"> Audio descriptivo </a></li>
+                <li><a href="#"> Centro de ayuda </a></li>
+                <li><a href="#"> Tarjetas de regalo </a></li>
+                <li><a href="#"> Prensa </a></li>
+            </ul>
+
+            <ul>    <!-- LISTA 2 -->
+                <li><a href="#"> Relaciones con inversionistas </a></li>
+                <li><a href="#"> Empleo </a></li>
+                <li><a href="#"> Tienda de Netflix </a></li>
+                <li><a href="#"> Términos de uso</a></li>
+            </ul>
+
+            <ul>    <!-- LISTA 3-->
+                <li><a href="#"> Privacidad </a></li>
+                <li><a href="#"> Avisos legales </a></li>
+                <li><a href="#"> Preferencias de cookies </a></li>
+                <li><a href="#"> Información corporativa</a></li>
+            </ul>
+
+            <ul>    <!-- LISTA 4 -->
+                <li><a href="#"> Contáctanos </a></li>
+            </ul>
+        </section>
+
+         <!-- SECCIÓN DEL COPYRIGHT -->
+        <button class="service-code">Código de servicio</button>
+        <p class="copyright">  © 1997–2025 Netflix, Inc.</p>
+    </footer>
+    <!-- FIN DEL FOOTER -->
+    <script src="../js/modal.js"></script>
+</body>
+<!-- FIN DEL CUERPO DE LA PÁGINA -->
+</html>

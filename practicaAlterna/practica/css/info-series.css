@@ -1,0 +1,176 @@
+.principal-hero{
+    padding: 10px 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.principal-hero .netflix-series{
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.principal-hero .netflix-series .netflix{
+    height: 2rem;
+    width: 2rem;
+}
+
+.principal-hero .netflix-series .netflix img{
+    height: 100%;
+    width: 100%;
+
+}
+
+.principal-hero .netflix-series p{
+    letter-spacing: 5px;
+}
+
+.principal-hero .serie{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.principal-hero .serie .info{
+    display: flex;
+    gap: 20px;
+}
+
+.principal-hero .serie .logo-serie{
+    max-width: 26rem;
+    min-height: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.principal-hero .serie .logo-serie img{
+    width: 100%;
+}
+
+.principal-hero .serie .logo-serie .info{
+    display: flex;
+    gap: 20px;
+}
+
+.principal-hero .serie .info .item{
+    letter-spacing: 2px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.principal-hero .serie .info .category button{
+    width: 50px;
+    height: 18px;
+    background-color: #e50914;
+    border-radius: 2px;
+}
+
+.principal-hero .serie .descripcion-parrafo{
+    margin-top: 10px;
+    width: 60%;
+    letter-spacing: 2px;
+    line-height: 1.4;
+}
+
+.buttons{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.buttons .btn{
+    border-radius: 2px;
+    color: white;
+    width: 6.25rem;
+    height: 2rem;
+    border: none;    
+    text-align: center;
+    font-size: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.buttons .btn span{
+    z-index: 2; 
+    position: relative;
+    transition: all;
+    transition: ease;
+    transition-duration: 0.3s;
+}
+
+.buttons .btn:hover{
+    cursor: pointer;
+}
+
+.play{
+    background-color: #e50914;
+    margin-right: 20px;
+}
+
+.buttons .play::after{
+    content: "";
+    display: block;
+    height: 1px;
+    width: 1px;
+    background: none;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    border-radius: 100%;
+    transition: all;
+    transition: ease-in-out;
+    transition-duration: 0.7s;
+}
+
+.buttons .play:hover::after{
+    transform: scale(1000);
+    background-color: white;
+}
+
+.buttons .play:hover span{
+    color: black;
+}
+
+.buttons .list{
+    background-color: transparent;
+    transition: all 0.4s ease;
+}
+
+.buttons .list:hover{
+    border: 3px white solid;  
+}
+
+@media (max-width:599px) {
+    .principal-hero{
+        padding: 10px 20px;
+    }
+
+    .netflix-series{
+        transform: scale(0.6);
+    }
+
+    .logo-serie{
+        width: 60%;
+    }
+
+    .principal-hero .serie .descripcion-parrafo{
+        margin-top: 10px;
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    .buttons{
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+    }
+
+    .buttons .btn{
+        width: 100%;
+        height: 2.5rem;
+    }
+}
